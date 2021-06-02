@@ -22,6 +22,7 @@ def rayafm(url):
   soup = BeautifulSoup(res.text, 'html.parser')
   links = soup.select('h3')
   raya = []
+  print('------------RayaFM-News----------------------------')
   for idx, item in enumerate(links):
     title = item.a.get('title', None)
     href = item.a.get('href', None)
@@ -40,6 +41,6 @@ with open("newsScraped.txt", "w") as myfi:
       myfi.write(f"{item} : {val}\n")
   myfi.write("\n\n--------Maan-News--------\n\n")
 
-#pprint(rayafm('https://www.raya.ps/news/palestine-today?page=1'))
-#pprint(maannews('https://www.maannews.net/news?page=1'))
+pprint(ra)
+pprint(ma)
 #pprint(maannews('https://www.maannews.net/news?page=2'))
