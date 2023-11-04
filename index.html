@@ -16,15 +16,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Aligns the content in a column */
+    flex-direction: column;
+    overflow: hidden; 
     color: #fff;
   }
   .video-container {
     position: relative;
-    width: 640px; /* Fixed width, you can use percentage as well */
-    height: 360px; /* Fixed height for 16:9 aspect ratio */
+    width: 1280px; 
+    height: 720px; 
     z-index: 10;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); /* Optional: Adds shadow to the video frame */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   }
   .video-container iframe {
     position: absolute;
@@ -34,36 +35,53 @@
     height: 100%;
     border: none;
   }
-  .telegram-button {
-    padding: 10px 20px;
-    background-color: #008800; /* Telegram color */
+  .button-container {
+    margin-top: 20px;
+  }
+  .button {
+    padding: 12px 24px;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     transition: background-color 0.3s;
-    margin-top: 20px;
+    margin-right: 10px;
+  }
+  .telegram-button {
+    background-color: #0088cc;
   }
   .telegram-button:hover {
-    background-color: #006600;
+    background-color: #006699;
+  }
+  .watch-now-button {
+    background-color: #cc0000;
+  }
+  .watch-now-button:hover {
+    background-color: #990000;
   }
 </style>
 </head>
 <body>
 
 <div class="video-container">
-  <!-- Shouting At The Wall -->
+  
   <iframe
-    src="https://www.youtube.com/embed/l8qay1Al7Dc?autoplay=1&mute=0&playlist=l8qay1Al7Dc&loop=1&controls=1&modestbranding=1&rel=0"
+    src="https://www.youtube.com/embed/l8qay1Al7Dc?autoplay=1&mute=0&playlist=l8qay1Al7Dc&loop=1&controls=1&modestbranding=1&rel=0&vq=hd1080"
     frameborder="0"
     allow="autoplay; fullscreen"
     allowfullscreen
   ></iframe>
 </div>
 
-<!-- Watch Now -->
-<a href="https://t.me/gazaalannet" target="_blank" class="telegram-button">Visit Our Telegram Channel</a>
-
+<div class="button-container">
+  
+  <a href="https://t.me/gazaalannet" target="_blank" class="button telegram-button">Visit Our Telegram Channel</a>
+  
+  <a href="https://www.youtube.com/watch?v=bNyUyrR0PHo" target="_blank" class="button watch-now-button">Watch Now</a>
+</div>
+<h1>Save Humanity, Save Gaza!</h1>
+<br>
+<h3>-"We know too well that our freedom is incomplete without the freedom of the Palestinians."<br> – Nelson Mandela</h2>
 </body>
 </html>
