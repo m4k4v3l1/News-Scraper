@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Palestine</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    padding: 0;
+    background: url('https://cdn.pixabay.com/photo/2012/04/23/16/35/palestine-38913_960_720.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Aligns the content in a column */
+    color: #fff;
+  }
+  .video-container {
+    position: relative;
+    width: 640px; /* Fixed width, you can use percentage as well */
+    height: 360px; /* Fixed height for 16:9 aspect ratio */
+    z-index: 10;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); /* Optional: Adds shadow to the video frame */
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .telegram-button {
+    padding: 10px 20px;
+    background-color: #008800; /* Telegram color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  .telegram-button:hover {
+    background-color: #006600;
+  }
+</style>
+</head>
+<body>
+
+<div class="video-container">
+  <!-- Shouting At The Wall -->
+  <iframe
+    src="https://www.youtube.com/embed/l8qay1Al7Dc?autoplay=1&mute=0&playlist=l8qay1Al7Dc&loop=1&controls=1&modestbranding=1&rel=0"
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    allowfullscreen
+  ></iframe>
+</div>
+
+<!-- Watch Now -->
+<a href="https://t.me/gazaalannet" target="_blank" class="telegram-button">Visit Our Telegram Channel</a>
+
+</body>
+</html>
